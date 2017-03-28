@@ -39,18 +39,54 @@ section {
   font-size: 20px;
   background: #fff;
   color: #fec95c; }
+  #icon-i:hover .tooltiptext {
+    visibility: visible; }
+  #icon-i .tooltiptext {
+    margin-top: 45px;
+    padding: 10px;
+    font-size: 15px;
+    font-family: sans-serif;
+    right: 60px;
+    position: absolute;
+    visibility: hidden;
+    width: 200px;
+    height: 150px;
+    background-color: #fff;
+    text-align: center;
+    color: #000; }
 
 #floating-panel {
   position: absolute;
-  top: 10px;
-  left: 25%;
+  top: 100px;
+  left: 5%;
   z-index: 5;
   background-color: #fff;
   padding: 5px;
-  border: 1px solid #999;
-  text-align: center;
+  border: 1px solid #fff;
   font-family: 'Roboto','sans-serif';
   line-height: 30px;
-  padding-left: 10px;
-}
+  padding-left: 20px;
+  width: 250px; }
+
+.select {
+  border: 1px solid #fec95c;
+  width: 90%;
+  margin-bottom: 20px; }
+
+#buscar {
+  background: #fec95c;
+  border: 1px solid #fec95c;
+  color: #fff;
+  width: 90%; }
+
+#coches {
+  position: absolute;
+  width: 250px;
+  height: 240px;
+  background-color: #fff;
+  padding: 0 15px;
+  left: 5%;
+  top: 350px;
+  z-index: 10000; }
+
 /*# sourceMappingURL=main.css.map */

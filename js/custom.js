@@ -8,7 +8,7 @@ $(document).ready(init);
 function init()
 {
 	currentSection = $('#home-sec');
-	$('#btninfo').click(onClickInfo);
+	$('.btninfo').click(onClickInfo);
 	$('#btncalculator').click(onClickCalculator);
 	$('#btnfooter').click(onClickFooter);
     
@@ -70,9 +70,7 @@ function calculateAndDisplayRoute(directionsService, directionsDisplay) {
   }, function(response, status) {
     if (status === google.maps.DirectionsStatus.OK) {
       directionsDisplay.setDirections(response);
-    } else {
-      window.alert('Directions request failed due to ' + status);
-    }
+    } 
   });
 }
 

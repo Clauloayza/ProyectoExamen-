@@ -9,7 +9,7 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-	<!--REQUIRED STYLE SHEETS-->
+	
 </head>
 <body>
 
@@ -19,7 +19,8 @@
 				 <a class="navbar-brand img-responsive"><img src="docs/logo-gris.jpg" style="width:130px" alt=""></a>
 			</div>
 	  		<div>
-			     <span class="pull-right glyphicon glyphicon-info-sign tooltiptext" id="icon-i"></span> 
+		     	 <i class="pull-right glyphicon glyphicon-info-sign" aria-hidden="true" id="icon-i"><span class=" tooltiptext"><img src="docs/logo-peach.jpg" width="90px" class="d-inline-block alingñtop" alt=""><br><br>La nueva forma de moverte en la ciudad. Con <img src="docs/logo-gris.jpg" width="70px" class="d-inline-block align-top" alt="">puedes compartir tu viaje con amigos y cobrar el costo equitativamente</span> </i>
+			     
 		    </div>
 		</div>
 		
@@ -27,59 +28,126 @@
 	<section id="home-sec" class="visible">
 		<div class="content">
 			<div class="container"  >
+	    	<div id="map">
+			    
+			</div>
 		    <div id="floating-panel">
-    <h4>ORIGEN </h4>
-    <select id="origen" onchange="calcRoute();">
-      <option value="Arica, Chile">Arica</option>
-      <option value="Iquique, Chile">Iquique</option>
-      <option value="Antofagasta, Chile">Antofagasta</option>
-      <option value="Calama, Chile">Calama</option>
-      <option value="La Serena, Chile">La Serena</option>
-      <option value="Valparaiso, Chile">Valaparaiso</option>
-      <option value="Santiago, Chile">Santiago</option>
-      <option value="Rancagua, Chile">Rancagua</option>
-      <option value="Talca, chile">Talca</option>
-      <option value="Concepción, Chile">Concepción</option>
-      <option value="Temuco, Chile">Temuco</option>
-      <option value="Valdivia, Chile">Valdivia</option>
-      <option value="Puerto Montt, Chile">Puerto Montt</option>
-      <option value="Coyhaique, Chile">Coyhaique</option>
-      <option value="Punta Arenas, Chile">Punta Arenas</option>
-    </select>
-    <h4>DESTINO</h4>
-    <select id="destino" onchange="calcRoute();">
-      <option value="Arica, Chile">Arica</option>
-      <option value="Iquique, Chile">Iquique</option>
-      <option value="Antofagasta, Chile">Antofagasta</option>
-      <option value="Calama, Chile">Calama</option>
-      <option value="La Serena, Chile">La Serena</option>
-      <option value="Valparaiso, Chile">Valaparaiso</option>
-      <option value="Santiago, Chile">Santiago</option>
-      <option value="Rancagua, Chile">Rancagua</option>
-      <option value="Talca, chile">Talca</option>
-      <option value="Concepción, Chile">Concepción</option>
-      <option value="Temuco, Chile">Temuco</option>
-      <option value="Valdivia, Chile">Valdivia</option>
-      <option value="Puerto Montt, Chile">Puerto Montt</option>
-      <option value="Coyhaique, Chile">Coyhaique</option>
-      <option value="Punta Arenas, Chile">Punta Arenas</option>
-    </select>
-    </div>
+				<h4>O R I G E N </h4>
+				<select class="select" id="origen"  onchange="calcRoute();">
+				 <option value="" placeholder="selecione"></option>
+				  <option value="Arica, Chile">Arica</option>
+				  <option value="Iquique, Chile">Iquique</option>
+				  <option value="Antofagasta, Chile">Antofagasta</option>
+				  <option value="Calama, Chile">Calama</option>
+				  <option value="La Serena, Chile">La Serena</option>
+				  <option value="Valparaiso, Chile">Valaparaiso</option>
+				  <option value="Santiago, Chile">Santiago</option>
+				  <option value="Rancagua, Chile">Rancagua</option>
+				  <option value="Talca, chile">Talca</option>
+				  <option value="Concepción, Chile">Concepción</option>
+				  <option value="Temuco, Chile">Temuco</option>
+				  <option value="Valdivia, Chile">Valdivia</option>
+				  <option value="Puerto Montt, Chile">Puerto Montt</option>
+				  <option value="Coyhaique, Chile">Coyhaique</option>
+				  <option value="Punta Arenas, Chile">Punta Arenas</option>
+				</select>
+				<h4>D E S T I N O</h4>
+				   <select id="destino" class="select"  onchange="calcRoute();">
+				   <option value="" placeholder="selecione"></option>
+				  <option value="Arica, Chile">Arica</option>
+				  <option value="Iquique, Chile">Iquique</option>
+				  <option value="Antofagasta, Chile">Antofagasta</option>
+				  <option value="Calama, Chile">Calama</option>
+				  <option value="La Serena, Chile">La Serena</option>
+				  <option value="Valparaiso, Chile">Valaparaiso</option>
+				  <option value="Santiago, Chile">Santiago</option>
+				  <option value="Rancagua, Chile">Rancagua</option>
+				  <option value="Talca, chile">Talca</option>
+				  <option value="Concepción, Chile">Concepción</option>
+				  <option value="Temuco, Chile">Temuco</option>
+				  <option value="Valdivia, Chile">Valdivia</option>
+				  <option value="Puerto Montt, Chile">Puerto Montt</option>
+				  <option value="Coyhaique, Chile">Coyhaique</option>
+				  <option value="Punta Arenas, Chile">Punta Arenas</option>
+				</select>
+				<button id="buscar"  class="btninfo"><b>buscar</b></button>
+				</div>
+			    
+	    		    			
+			</div>
+	</div>	
+	</section>  
+	<section id="info" class="">
+		<div class="content">
+			<div class="container"  >
+		    <div id="floating-panel">
+				<h4>O R I G E N </h4>
+				<select class="select" id="origen"  onchange="calcRoute();">
+				 <option value="" placeholder="selecione"></option>
+				  <option value="Arica, Chile">Arica</option>
+				  <option value="Iquique, Chile">Iquique</option>
+				  <option value="Antofagasta, Chile">Antofagasta</option>
+				  <option value="Calama, Chile">Calama</option>
+				  <option value="La Serena, Chile">La Serena</option>
+				  <option value="Valparaiso, Chile">Valaparaiso</option>
+				  <option value="Santiago, Chile">Santiago</option>
+				  <option value="Rancagua, Chile">Rancagua</option>
+				  <option value="Talca, chile">Talca</option>
+				  <option value="Concepción, Chile">Concepción</option>
+				  <option value="Temuco, Chile">Temuco</option>
+				  <option value="Valdivia, Chile">Valdivia</option>
+				  <option value="Puerto Montt, Chile">Puerto Montt</option>
+				  <option value="Coyhaique, Chile">Coyhaique</option>
+				  <option value="Punta Arenas, Chile">Punta Arenas</option>
+				</select>
+				<h4>D E S T I N O</h4>
+				   <select id="destino" class="select"  onchange="calcRoute();">
+				   <option value="" placeholder="selecione"></option>
+				  <option value="Arica, Chile">Arica</option>
+				  <option value="Iquique, Chile">Iquique</option>
+				  <option value="Antofagasta, Chile">Antofagasta</option>
+				  <option value="Calama, Chile">Calama</option>
+				  <option value="La Serena, Chile">La Serena</option>
+				  <option value="Valparaiso, Chile">Valaparaiso</option>
+				  <option value="Santiago, Chile">Santiago</option>
+				  <option value="Rancagua, Chile">Rancagua</option>
+				  <option value="Talca, chile">Talca</option>
+				  <option value="Concepción, Chile">Concepción</option>
+				  <option value="Temuco, Chile">Temuco</option>
+				  <option value="Valdivia, Chile">Valdivia</option>
+				  <option value="Puerto Montt, Chile">Puerto Montt</option>
+				  <option value="Coyhaique, Chile">Coyhaique</option>
+				  <option value="Punta Arenas, Chile">Punta Arenas</option>
+				</select>
+				<button id="buscar" class="btninfo"><b>buscar</b></button>
+				</div>
+		    	
+		    	<div id="coches">
+					<h5> VEHICULO <br> <small>seleccione</small></h5>
+					  <form>
+					   <div class="radio">
+						 <label><input type="radio" name="optradio"> <img src="docs/moto.jpg" alt="" width="20px;">Motocicleta <br> <small>máximo 2 pasajeros</small></label>
+					   </div>
+					   <div class="radio">
+						 <label><input type="radio" name="optradio"> <img src="docs/auto.jpg" alt="" width="20px;">Automóvil <br> <small>máximo 5 pasajeros</small></label>
+					   </div>
+					   <div class="radio">
+						 <label><input type="radio" name="optradio"> <img src="docs/van.jpg" alt="" width="20px;">Minivan <br> <small>máximo 10 pasajeros</small></label>
+					   </div>
+						<div class="radio">
+						 <label><input type="radio" name="optradio"> <img src="docs/camion.jpg" alt="" width="20px;">Camión <br> <small>máximo 3 pasajeros</small></label>
+					   </div>
+					 </form>
+					<button type="button" class="btn btn-sm btn-warning btn-block" id="boton_search" >Compartir carro</button>
+					 </div>
+		    	
 			    <div id="map">
 			    
 				</div>
 	    		    			
 			</div>
 	</div>	
-	</section><!--END HOME SECTION-->  
-	<section id="info">
-		<div class="content">
-			<div class="container">
-				<div id="map">
-				</div>		
-			</div>
-		</div>
-	</section><!--END ABOUT SECTION-->
+	</section>
 	<section id="calculator" >
 		<div class="content">
 			<div class="container">
