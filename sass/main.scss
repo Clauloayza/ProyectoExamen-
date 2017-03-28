@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0; }
 
-body{
+#map{
 	position: absolute;
 	left: 0;
 	top: 0;
@@ -13,6 +13,28 @@ body{
 	border-width: 0;
 }
 
+header {
+  position: relative;
+  z-index: 100; }
+
+section {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  display: none;
+  opacity: 0.8; }
+
+.visible {
+  opacity: 1;
+  display: table; }
+
+.content {
+  background: #fff;
+  display: table-cell;
+	vertical-align: middle; }
+
 #icon-i{
 	padding-top: 2%;
 	font-size: 20px;
@@ -20,9 +42,5 @@ body{
 	color: #fec95c;
 }
 
-#map {
-        height: 100%;
-		width: 100%;
-      }
 
 

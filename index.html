@@ -27,10 +27,49 @@
 	<section id="home-sec" class="visible">
 		<div class="content">
 			<div class="container"  >
+		    <div id="floating-panel">
+    <h4>ORIGEN </h4>
+    <select id="origen" onchange="calcRoute();">
+      <option value="Arica, Chile">Arica</option>
+      <option value="Iquique, Chile">Iquique</option>
+      <option value="Antofagasta, Chile">Antofagasta</option>
+      <option value="Calama, Chile">Calama</option>
+      <option value="La Serena, Chile">La Serena</option>
+      <option value="Valparaiso, Chile">Valaparaiso</option>
+      <option value="Santiago, Chile">Santiago</option>
+      <option value="Rancagua, Chile">Rancagua</option>
+      <option value="Talca, chile">Talca</option>
+      <option value="Concepción, Chile">Concepción</option>
+      <option value="Temuco, Chile">Temuco</option>
+      <option value="Valdivia, Chile">Valdivia</option>
+      <option value="Puerto Montt, Chile">Puerto Montt</option>
+      <option value="Coyhaique, Chile">Coyhaique</option>
+      <option value="Punta Arenas, Chile">Punta Arenas</option>
+    </select>
+    <h4>DESTINO</h4>
+    <select id="destino" onchange="calcRoute();">
+      <option value="Arica, Chile">Arica</option>
+      <option value="Iquique, Chile">Iquique</option>
+      <option value="Antofagasta, Chile">Antofagasta</option>
+      <option value="Calama, Chile">Calama</option>
+      <option value="La Serena, Chile">La Serena</option>
+      <option value="Valparaiso, Chile">Valaparaiso</option>
+      <option value="Santiago, Chile">Santiago</option>
+      <option value="Rancagua, Chile">Rancagua</option>
+      <option value="Talca, chile">Talca</option>
+      <option value="Concepción, Chile">Concepción</option>
+      <option value="Temuco, Chile">Temuco</option>
+      <option value="Valdivia, Chile">Valdivia</option>
+      <option value="Puerto Montt, Chile">Puerto Montt</option>
+      <option value="Coyhaique, Chile">Coyhaique</option>
+      <option value="Punta Arenas, Chile">Punta Arenas</option>
+    </select>
+    </div>
 			    <div id="map">
+			    
 				</div>
 	    		    			
-				</div>
+			</div>
 	</div>	
 	</section><!--END HOME SECTION-->  
 	<section id="info">
@@ -55,5 +94,5 @@
 </body>
 
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAU1xo2WdqDJ_4uFrjZ--6X1K6nVqbHXDg&callback=initMap" async defer></script>
-<script src="js/main.js"></script>
+<script src="js/custom.js"></script>
 </html>
