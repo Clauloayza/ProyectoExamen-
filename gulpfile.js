@@ -7,6 +7,11 @@ var jshint = require('gulp-jshint');
 var sass = require('gulp-sass');
 var minifyCSS = require('gulp-minify-css');
 
+/*gulp.task('default', function(){
+	return gulp.src('./node_modules/bootstrap/dist/css/bootstrap.css')
+		.pipe(scss())
+		.pipe(gulp.dest('./css'));
+});*/
 
 gulp.task('script', function(cb){
 	// tarea script
@@ -22,3 +27,5 @@ gulp.task('images', function() {
 
 
 gulp.task('default', ['images', 'style', 'script']);
+
+

@@ -1,30 +1,60 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 	<title>Examen Herramientas Productividad</title>
+	<link rel="stylesheet" href="css/main.css">
+	<script src="jquery/jquery.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 	<!--REQUIRED STYLE SHEETS-->
 </head>
 <body>
-	<div class="navbar navbar-inverse navbar-fixed-top">
-		<div class="container">
+
+	<div class="navbar navbar-fixed-top">
+		<div class="container fluid">
+			<div>
+				 <a class="navbar-brand img-responsive"><img src="docs/logo-gris.jpg" style="width:130px" alt=""></a>
+			</div>
+	  		<div>
+			     <span class="pull-right glyphicon glyphicon-info-sign" id="icon-i"></span> 
+		    </div>
 		</div>
-	</div><!--END NAV SECTION -->
-	<div id="home-sec">   
-		<div class="container"  >
-		</div>
-	</div><!--END HOME SECTION-->  
-	<section id="info"  >
-		<div class="container">
+		
+	</div>
+	<section id="home-sec" class="visible">
+		<div class="content">
+			<div class="container"  >
+			    <div id="map">
+				</div>
+	    		    			
+				</div>
+	</div>	
+	</section><!--END HOME SECTION-->  
+	<section id="info">
+		<div class="content">
+			<div class="container">
+				<div id="map">
+				</div>		
+			</div>
 		</div>
 	</section><!--END ABOUT SECTION-->
 	<section id="calculator" >
-		<div class="container">
+		<div class="content">
+			<div class="container">
+				<div id="map">
+				</div>		
+			</div>
 		</div>
 	</section><!--END PROJECT SECTION-->
 	<div id="footer">
 		2014 www.yourdomain.com | All Right Reserved  
 	</div><!-- END FOOTER SECTION -->
 </body>
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB8Beu2XxIG8nLJXGlSJeZpQnP21fkroYs&callback=initMap"
+    async defer></script>
+<script src="js/main.js"></script>
 </html>
