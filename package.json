@@ -27,3 +27,92 @@
     "jquery": "^3.1.1"
   }
 }
+
+
+//-----------------------------
+var vehiculos = [
+	{
+	    "nombre" : "Auto",
+	    "kilometros":"5",
+		"Consumo":"12"
+	},
+	{
+		"nombre" : "Moto",
+	    "kilometros":"2",
+		"Consumo":"21"
+	},
+	{
+		"nombre" : "Minivan",
+	    "kilometros":"8",
+		"Consumo":"7"
+	},
+	{
+		"nombre" : "Camión",
+	    "kilometros":"3",
+		"Consumo":"6"
+	}
+	
+]
+
+var ciudad = [
+	{
+		"name": "Arica",
+		"distancia": "2059"
+	},
+	{
+		"name": "Iquique",
+		"distancia": "1789"
+	},
+	{
+		"name": "Antofagasta",
+		"distancia": "1368"
+	},
+	{
+		"name": "Calama",
+		"distancia": "1567"
+	},
+	{
+		"name": "La Serena",
+		"distancia": "470"
+	},
+	{
+		"name": "Valparaiso",
+		"distancia": "116"
+	},
+	{
+		"name": "Santiago",
+		"distancia": "0"
+	},
+	{
+		"name": "Rancagua",
+		"distancia": "84"
+	},
+	{
+		"name": "Talca",
+		"distancia": "257"
+	},
+	{
+		"name": "Concepcion",
+		"distancia": "500"
+	},
+	{
+		"name": "Temuco",
+		"distancia": "690"
+	},
+	{
+		"name": "Valdivia",
+		"distancia": "848"
+	},
+	{
+		"name": "Puerto Mott",
+		"distancia": "1032"
+	},
+	{
+		"name": "Coyhaique",
+		"distancia": "1888"
+	},
+	{
+		"name": "Punta Arenas",
+		"distancia": "3004"
+	}
+]

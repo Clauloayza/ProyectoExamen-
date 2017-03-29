@@ -90,6 +90,11 @@ section {
 	border: 1px solid #fec95c;
 	color: $background;
 	width: 90%;
+	
+	&:hover #buscar{
+		visibility: visible;
+		
+	}
 }
 //-----section2
 #vehiculo{
@@ -101,6 +106,8 @@ section {
 	left: 5%;
 	top: 300px;
 	z-index: 10000;
-	visibility: hidden;
+	//visibility: hidden;
+	
+	
 }
 

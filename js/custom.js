@@ -19,13 +19,22 @@ function init()
 		
 		gotoSection('home-sec');
 		
-		$('#buscar').on('click',function(){
+		$('#buscar').on('click', function(){
+			if($('#buscar').click()){
+				$('#vehiculo').show();
+				
+			}else{
+				$('#vehiculo').hide();
+			}			
+		})
+		
+		/*$('#buscar').on('click',function(){
 			
 			$('#vehiculo').show();			   
 		
 		});
 		
-		/*$(document).ready(function(){
+		$(document).ready(function(){
     $("#btncal").click(function(){
         swal({
 		  title: "carrocomp!",
@@ -37,6 +46,22 @@ function init()
 });*/
 }
 	 
+$(document).ready(function(){ 
+	var vehiculo = $('#vehiculo');
+	var number = $('#numberAlone');
+	
+	//if(vehiculo.click(function()))
+	
+	number.keyup(function(){
+		this.value = (this.value + '').replace(/[^0-9]/g, '');
+	});
+	
+	//if(number.length.val()){}
+		
+	
+})
+	
+		
 	
 	
 

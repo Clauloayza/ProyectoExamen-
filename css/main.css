@@ -78,6 +78,8 @@ section {
   border: 1px solid #fec95c;
   color: #fff;
   width: 90%; }
+  #buscar:hover #buscar {
+    visibility: visible; }
 
 #vehiculo {
   position: absolute;
@@ -87,7 +89,6 @@ section {
   padding: 0 15px;
   left: 5%;
   top: 300px;
-  z-index: 10000;
-  visibility: hidden; }
+  z-index: 10000; }
 
 /*# sourceMappingURL=main.css.map */
