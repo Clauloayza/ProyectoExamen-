@@ -1,6 +1,4 @@
-/*$(document).ready(function(){
-	
-});*/
+
 $(document).ready(init);
 
 	var currentSection = null;
@@ -15,31 +13,6 @@ function init()
 	
 	function onClickInfo(){
 	gotoSection('home-sec');
-		/*$('#buscar').on('click', function(){
-			if($('#buscar').click()){
-				$('#vehiculo').show();
-				
-			}else{
-				$('#vehiculo').hide();
-			}			
-		})
-		
-		$('#buscar').on('click',function(){
-			
-			$('#vehiculo').show();			   
-		
-		});
-		
-		$(document).ready(function(){
-    $("#btncal").click(function(){
-        swal({
-		  title: "carrocomp!",
-		  imageUrl: "docs/moto.jpg",
-		  text: "Costo por persona:",
-			
-			});
-    });
-});*/
 }
 	 
 $(document).ready(function(){ 
@@ -66,12 +39,7 @@ $('#person').click(function(){
 	function onClickCalculator(){
 		gotoSection('calculator');
 	}
-	
-	/*$(document).ready(function(){
-		$("#person").keyup(function(){
-			this.value = (this.value + '').replace(/[^0-9]/g,);
-		});
-	});*/
+
 		
 	function onClickFooter(){
 		gotoSection('footer')
