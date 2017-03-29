@@ -1,3 +1,4 @@
+$background: #fff;
 
 * {
   margin: 0;
@@ -33,14 +34,14 @@ section {
   display: table; }
 
 .content {
-  background: #fff;
+  background: $background;
   display: table-cell;
 	vertical-align: middle; }
 
 #icon-i{
 	padding-top: 13px;
 	font-size: 20px;
-	background: #fff ;
+	background: $background;
 	color: #fec95c;
 	
 	&:hover .tooltiptext{
@@ -57,7 +58,7 @@ section {
 		visibility: hidden;
 		width: 200px;
 		height: 150px;
-		background-color: #fff;
+		background-color: $background;
 		text-align: center;
 		color: #000;
 		
@@ -68,9 +69,9 @@ section {
   top: 100px;
   left: 5%;
   z-index: 5;
-  background-color: #fff;
+  background-color: $background;
   padding: 5px;
-  border: 1px solid #fff;
+  border: 1px solid $background;
   font-family: 'Roboto','sans-serif';
   line-height: 30px;
   padding-left: 20px;
@@ -85,18 +86,19 @@ section {
 #buscar{
 	background: #fec95c;
 	border: 1px solid #fec95c;
-	color: #fff;
+	color: $background;
 	width: 90%;
 }
 //-----section2
 #vehiculo{
 	position: absolute;
 	width: 250px;
-	height: 240px;
-	background-color: #fff;
+	height: 280px;
+	background-color: $background;
 	padding: 0 15px;
 	left: 5%;
-	top: 350px;
+	top: 325px;
 	z-index: 10000;
+	
 }
 

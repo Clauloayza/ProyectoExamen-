@@ -17,11 +17,34 @@ function init()
 	
 	function onClickInfo(){
 		gotoSection('info');
-	}
+		
+		$(document).ready(function(){
+    $("#btncal").click(function(){
+        swal({
+		  title: "carrocomp!",
+		  imageUrl: "docs/moto.jpg",
+		  text: "Costo por persona:",
+			
+			});
+    });
+});
+}
+	 
 	
+	
+
 	function onClickCalculator(){
 		gotoSection('calculator');
+		
+		
 	}
+	
+	/*$(document).ready(function(){
+		$("#person").keyup(function(){
+			this.value = (this.value + '').replace(/[^0-9]/g,);
+		});
+	});*/
+	
 	
 	function onClickFooter(){
 		gotoSection('footer')
