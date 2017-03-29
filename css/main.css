@@ -78,8 +78,6 @@ section {
   border: 1px solid #fec95c;
   color: #fff;
   width: 90%; }
-  #buscar:hover #buscar {
-    visibility: visible; }
 
 #vehiculo {
   position: absolute;

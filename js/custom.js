@@ -18,8 +18,10 @@ function init()
 	function onClickInfo(){
 		
 		gotoSection('home-sec');
+
 		
-		$('#buscar').on('click', function(){
+		
+		/*$('#buscar').on('click', function(){
 			if($('#buscar').click()){
 				$('#vehiculo').show();
 				
@@ -28,7 +30,7 @@ function init()
 			}			
 		})
 		
-		/*$('#buscar').on('click',function(){
+		$('#buscar').on('click',function(){
 			
 			$('#vehiculo').show();			   
 		
@@ -47,21 +49,39 @@ function init()
 }
 	 
 $(document).ready(function(){ 
-	var vehiculo = $('#vehiculo');
+	//var vehiculo = $('#vehiculo');
 	var number = $('#numberAlone');
 	
 	//if(vehiculo.click(function()))
+	
+	/*$('#buscar').toggle(
+		function(e){
+			$('#vehiculo').slideDown();
+			$(this).text('hola');
+			e.preventDefault();
+		},
+		
+		function(e){
+			$('#vehiculo').slideUp();
+			$(this).text('ya');
+			e.preventDefault();
+		}
+	);*/
 	
 	number.keyup(function(){
 		this.value = (this.value + '').replace(/[^0-9]/g, '');
 	});
 	
-	//if(number.length.val()){}
-		
 	
 })
 	
-		
+	$('#buscar').click(function(){
+		if($('#vehiculo').is(":hidden")){
+			$('#vehiculo').slideDown("slow");
+		}else{
+			$('#vehiculo').hide();
+		}
+	});	
 	
 	
 

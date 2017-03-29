@@ -63,9 +63,9 @@ section {
 		background-color: $background;
 		text-align: center;
 		color: #000;
-		
 	}
 }
+
 #floating-panel {
   position: $position;
   top: 75px;
@@ -91,10 +91,10 @@ section {
 	color: $background;
 	width: 90%;
 	
-	&:hover #buscar{
-		visibility: visible;
+	//&:hover #buscar{
+		//visibility: visible;
 		
-	}
+	
 }
 //-----section2
 #vehiculo{
