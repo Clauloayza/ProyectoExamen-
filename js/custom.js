@@ -11,16 +11,10 @@ function init()
 	$('.btninfo').click(onClickInfo);
 	$('#btncalculator').click(onClickCalculator);
 	$('#btnfooter').click(onClickFooter);
-    
-
 }
 	
 	function onClickInfo(){
-		
-		gotoSection('home-sec');
-
-		
-		
+	gotoSection('home-sec');
 		/*$('#buscar').on('click', function(){
 			if($('#buscar').click()){
 				$('#vehiculo').show();
@@ -52,43 +46,25 @@ $(document).ready(function(){
 	//var vehiculo = $('#vehiculo');
 	var number = $('#numberAlone');
 	
-	//if(vehiculo.click(function()))
-	
-	/*$('#buscar').toggle(
-		function(e){
-			$('#vehiculo').slideDown();
-			$(this).text('hola');
-			e.preventDefault();
-		},
-		
-		function(e){
-			$('#vehiculo').slideUp();
-			$(this).text('ya');
-			e.preventDefault();
-		}
-	);*/
-	
 	number.keyup(function(){
 		this.value = (this.value + '').replace(/[^0-9]/g, '');
 	});
-	
-	
 })
 	
 	$('#buscar').click(function(){
 		if($('#vehiculo').is(":hidden")){
-			$('#vehiculo').slideDown("slow");
+			$('#vehiculo').slideDown("fast");
 		}else{
 			$('#vehiculo').hide();
 		}
 	});	
 	
+$('#person').click(function(){
 	
+})
 
 	function onClickCalculator(){
 		gotoSection('calculator');
-		
-		
 	}
 	
 	/*$(document).ready(function(){
@@ -96,8 +72,7 @@ $(document).ready(function(){
 			this.value = (this.value + '').replace(/[^0-9]/g,);
 		});
 	});*/
-	
-	
+		
 	function onClickFooter(){
 		gotoSection('footer')
 	}
@@ -108,7 +83,6 @@ function gotoSection(_identificador){
 	
 	nextSection.addClass('visible');
     currentSection = nextSection;
-	
 }
 
 //-------------------------MAPA

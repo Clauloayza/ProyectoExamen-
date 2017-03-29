@@ -73,7 +73,7 @@
 				  <option name="Coyhaique, Chile">Coyhaique</option>
 				  <option name="Punta Arenas, Chile">Punta Arenas</option>
 				</select>
-				<button id="buscar"  class="btninfo"  onchange="calcRoute();"><b>buscar</b></button>
+				<button id="buscar" class="btninfo"  onchange="calcRoute();"><b>buscar</b></button>
 				</div>
 		    
 		    	<div id="vehiculo">
@@ -96,14 +96,29 @@
 					   
 					 </form>
 					 
-					<button type="button"  class="btn btn-sm btn-warning btn-block" onclick="swal({
-						  title: 'carrocomp!',
-						  imageUrl: 'docs/moto.jpg',
-						  text: 'Costo por persona.'
-						  
-						});" ><b>Compartir carro</b></button>
+					<button type="button"  class="btn btn-sm btn-warning btn-block" data-toggle="modal" data-target="#myModal" ><b>Compartir carro</b></button>
+					
+					<div class="modal fade" id="myModal" role="dialog">
+						<div class="modal-dialog">
+					  
+						  <div class="modal-content">
+							<div class="modal-header text-center">
+							  <img src="docs/logo-peach.jpg" alt="" width="30%">
+							</div>
+							<div class="modal-body text-center">
+						  	  <img src="docs/moto.jpg" alt="" width="10%">
+							   <h4>Costo por persona</h4>
+							</div>
+							<div class="modal-footer">
+							  <h3 style="color:#fec95c" class="text-center"><b>$3670 CLP</b></h3>
+							</div>
+						  </div>
+
+						</div>
+					  </div>
+
 					 </div>
-			    
+			         
 	    		    			
 			</div>
 	</div>	
