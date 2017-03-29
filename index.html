@@ -27,7 +27,88 @@
 		</div>
 		
 	</div>
+	
 	<section id="home-sec" class="visible">
+		<div class="content">
+			<div class="container"  >
+	    	<div id="map">
+			    
+			</div>
+		    <div id="floating-panel">
+				<h4>O R I G E N </h4>
+				<select class="select" id="origen"  >
+				 
+				  <option name="Arica, Chile">Arica</option>
+				  <option name="Iquique, Chile">Iquique</option>
+				  <option name="Antofagasta, Chile">Antofagasta</option>
+				  <option name="Calama, Chile">Calama</option>
+				  <option name="La Serena, Chile">La Serena</option>
+				  <option name="Valparaiso, Chile">Valaparaiso</option>
+				  <option name="Santiago, Chile">Santiago</option>
+				  <option name="Rancagua, Chile">Rancagua</option>
+				  <option name="Talca, chile">Talca</option>
+				  <option name="Concepción, Chile">Concepción</option>
+				  <option name="Temuco, Chile">Temuco</option>
+				  <option name="Valdivia, Chile">Valdivia</option>
+				  <option name="Puerto Montt, Chile">Puerto Montt</option>
+				  <option name="Coyhaique, Chile">Coyhaique</option>
+				  <option name="Punta Arenas, Chile">Punta Arenas</option>
+				</select>
+				<h4>D E S T I N O</h4>
+				   <select id="destino" class="select" >
+				   
+				  <option name="Arica, Chile">Arica</option>
+				  <option name="Iquique, Chile">Iquique</option>
+				  <option name="Antofagasta, Chile">Antofagasta</option>
+				  <option name="Calama, Chile">Calama</option>
+				  <option name="La Serena, Chile">La Serena</option>
+				  <option name="Valparaiso, Chile">Valaparaiso</option>
+				  <option name="Santiago, Chile">Santiago</option>
+				  <option name="Rancagua, Chile">Rancagua</option>
+				  <option name="Talca, chile">Talca</option>
+				  <option name="Concepción, Chile">Concepción</option>
+				  <option name="Temuco, Chile">Temuco</option>
+				  <option name="Valdivia, Chile">Valdivia</option>
+				  <option name="Puerto Montt, Chile">Puerto Montt</option>
+				  <option name="Coyhaique, Chile">Coyhaique</option>
+				  <option name="Punta Arenas, Chile">Punta Arenas</option>
+				</select>
+				<button id="buscar"  class="btninfo"  onchange="calcRoute();"><b>buscar</b></button>
+				</div>
+		    
+		    	<div id="vehiculo">
+					<h4> <b>V E H I C U L O </b><br> <small>seleccione</small></h4>
+					  <form>
+					   <div class="radio">
+						   <label><input type="radio" name="optradio"> <img src="docs/moto.jpg" alt="" width="30px;"></label><h6 class="pull-right">Motocicleta <br> <small>máximo 2 pasajeros</small></h6>
+					   </div>
+					   
+					   <div class="radio">
+						 <label><input type="radio" name="optradio"> <img src="docs/auto.jpg" alt="" width="30px;"><h6 class="pull-right">Automóvil <br> <small>máximo 5 pasajeros</small></h6></label>
+					   </div>
+					   <div class="radio">
+						 <label><input type="radio" name="optradio"> <img src="docs/van.jpg" alt="" width="30px;">Minivan <br> <small>máximo 10 pasajeros</small></label>
+					   </div>
+						<div class="radio">
+						 <label><input type="radio" name="optradio" disabled > <img src="docs/camion.jpg" alt="" width="30px;">Camión <br> <small>máximo 3 pasajeros</small></label>
+						 <p><b><small>Cantidad de pasajeros:</small></b></p><input type="text" id="person">
+					   </div>
+					   
+					 </form>
+					 
+					<button type="button"  class="btn btn-sm btn-warning btn-block" onclick="swal({
+						  title: 'carrocomp!',
+						  imageUrl: 'docs/moto.jpg',
+						  text: 'Costo por persona.'
+						  
+						});" ><b>Compartir carro</b></button>
+					 </div>
+			    
+	    		    			
+			</div>
+	</div>	
+	</section>  
+	<section id="info" class="">
 		<div class="content">
 			<div class="container"  >
 	    	<div id="map">
@@ -72,89 +153,12 @@
 				  <option value="Coyhaique, Chile">Coyhaique</option>
 				  <option value="Punta Arenas, Chile">Punta Arenas</option>
 				</select>
-				<button id="buscar"  class="btninfo"><b>buscar</b></button>
-				</div>
-			    
-	    		    			
-			</div>
-	</div>	
-	</section>  
-	<section id="info" class="">
-		<div class="content">
-			<div class="container"  >
-		    <div id="floating-panel">
-				<h4>O R I G E N </h4>
-				<select class="select" id="origen"  onchange="calcRoute();">
-				 <option value="" placeholder="selecione"></option>
-				  <option value="Arica, Chile">Arica</option>
-				  <option value="Iquique, Chile">Iquique</option>
-				  <option value="Antofagasta, Chile">Antofagasta</option>
-				  <option value="Calama, Chile">Calama</option>
-				  <option value="La Serena, Chile">La Serena</option>
-				  <option value="Valparaiso, Chile">Valaparaiso</option>
-				  <option value="Santiago, Chile">Santiago</option>
-				  <option value="Rancagua, Chile">Rancagua</option>
-				  <option value="Talca, chile">Talca</option>
-				  <option value="Concepción, Chile">Concepción</option>
-				  <option value="Temuco, Chile">Temuco</option>
-				  <option value="Valdivia, Chile">Valdivia</option>
-				  <option value="Puerto Montt, Chile">Puerto Montt</option>
-				  <option value="Coyhaique, Chile">Coyhaique</option>
-				  <option value="Punta Arenas, Chile">Punta Arenas</option>
-				</select>
-				<h4>D E S T I N O</h4>
-				   <select id="destino" class="select"  onchange="calcRoute();">
-				   <option value="" placeholder="selecione"></option>
-				  <option value="Arica, Chile">Arica</option>
-				  <option value="Iquique, Chile">Iquique</option>
-				  <option value="Antofagasta, Chile">Antofagasta</option>
-				  <option value="Calama, Chile">Calama</option>
-				  <option value="La Serena, Chile">La Serena</option>
-				  <option value="Valparaiso, Chile">Valaparaiso</option>
-				  <option value="Santiago, Chile">Santiago</option>
-				  <option value="Rancagua, Chile">Rancagua</option>
-				  <option value="Talca, chile">Talca</option>
-				  <option value="Concepción, Chile">Concepción</option>
-				  <option value="Temuco, Chile">Temuco</option>
-				  <option value="Valdivia, Chile">Valdivia</option>
-				  <option value="Puerto Montt, Chile">Puerto Montt</option>
-				  <option value="Coyhaique, Chile">Coyhaique</option>
-				  <option value="Punta Arenas, Chile">Punta Arenas</option>
-				</select>
 				<button id="buscar" class="btninfo"><b>buscar</b></button>
 				</div>
 		    	
-		    	<div id="vehiculo">
-					<h4> <b>V E H I C U L O </b><br> <small>seleccione</small></h4>
-					  <form>
-					   <div class="radio">
-						   <label><input type="radio" name="optradio"> <img src="docs/moto.jpg" alt="" width="30px;"></label><h6 class="pull-right">Motocicleta <br> <small>máximo 2 pasajeros</small></h6>
-					   </div>
-					   
-					   <div class="radio">
-						 <label><input type="radio" name="optradio"> <img src="docs/auto.jpg" alt="" width="30px;"><h6 class="pull-right">Automóvil <br> <small>máximo 5 pasajeros</small></h6></label>
-					   </div>
-					   <div class="radio">
-						 <label><input type="radio" name="optradio"> <img src="docs/van.jpg" alt="" width="30px;">Minivan <br> <small>máximo 10 pasajeros</small></label>
-					   </div>
-						<div class="radio">
-						 <label><input type="radio" name="optradio" disabled > <img src="docs/camion.jpg" alt="" width="30px;">Camión <br> <small>máximo 3 pasajeros</small></label>
-						 <p><b><small>Cantidad de pasajeros:</small></b></p><input type="text" id="person">
-					   </div>
-					   
-					 </form>
-					 
-					<button type="button"  class="btn btn-sm btn-warning btn-block" onclick="swal({
-						  title: 'carrocomp!',
-						  imageUrl: 'docs/moto.jpg',
-						  text: 'Costo por persona.'
-						  
-						});" ><b>Compartir carro</b></button>
-					 </div>
 		    	
-			    <div id="map">
+		    	
 			    
-				</div>
 	    		    			
 			</div>
 	</div>	

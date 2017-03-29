@@ -16,9 +16,16 @@ function init()
 }
 	
 	function onClickInfo(){
-		gotoSection('info');
 		
-		$(document).ready(function(){
+		gotoSection('home-sec');
+		
+		$('#buscar').on('click',function(){
+			
+			$('#vehiculo').show();			   
+		
+		});
+		
+		/*$(document).ready(function(){
     $("#btncal").click(function(){
         swal({
 		  title: "carrocomp!",
@@ -27,7 +34,7 @@ function init()
 			
 			});
     });
-});
+});*/
 }
 	 
 	

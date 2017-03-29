@@ -1,6 +1,7 @@
 $background: #fff;
 $position: absolute;
 
+
 * {
   margin: 0;
   padding: 0; }
@@ -67,7 +68,7 @@ section {
 }
 #floating-panel {
   position: $position;
-  top: 100px;
+  top: 75px;
   left: 5%;
   z-index: 5;
   background-color: $background;
@@ -94,12 +95,12 @@ section {
 #vehiculo{
 	position: $position;
 	width: 250px;
-	height: 280px;
+	height: 305px;
 	background-color: $background;
 	padding: 0 15px;
 	left: 5%;
-	top: 325px;
+	top: 300px;
 	z-index: 10000;
-	
+	visibility: hidden;
 }
 
